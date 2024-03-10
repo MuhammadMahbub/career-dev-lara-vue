@@ -1,6 +1,9 @@
 import { createRouter, createWebHistory } from "vue-router";
-import About from '../components/About.vue'
 import Home from '../components/Home.vue'
+import Dashboard from '../components/Dashboard.vue'
+import Login from '../components/auth/Login.vue'
+import Register from '../components/auth/Register.vue'
+import NotFound from '../components/errors/404.vue'
 
 const routes = [
     {
@@ -9,9 +12,24 @@ const routes = [
         component: Home,
     },
     {
-        path: "/about",
-        name: "About",
-        component: About,
+        path: "/dashboard",
+        name: "Dashboard",
+        component: Dashboard,
+    },
+    {
+        path: "/login",
+        name: "Login",
+        component: Login,
+    },
+    {
+        path: "/register",
+        name: "Register",
+        component: Register,
+    },
+    {
+        path: "/:any",
+        name: "NotFound",
+        component: NotFound,
     },
 ];
 
