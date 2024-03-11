@@ -8,27 +8,27 @@ import NotFound from '../components/errors/404.vue'
 const routes = [
     {
         path: "/",
-        name: "Home",
+        name: "home",
         component: Home,
     },
     {
         path: "/dashboard",
-        name: "Dashboard",
+        name: "dashboard",
         component: Dashboard,
     },
     {
         path: "/login",
-        name: "Login",
+        name: "login",
         component: Login,
     },
     {
         path: "/register",
-        name: "Register",
+        name: "register",
         component: Register,
     },
     {
         path: "/:any",
-        name: "NotFound",
+        name: "notfound",
         component: NotFound,
     },
 ];
